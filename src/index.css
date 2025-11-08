@@ -1,0 +1,134 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 5% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 5% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 5% 15%;
+
+    /* Vermelho da paróquia */
+    --primary: 0 75% 45%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Dourado elegante */
+    --accent: 43 95% 58%;
+    --accent-foreground: 0 5% 15%;
+
+    /* Tom secundário em vermelho claro */
+    --secondary: 0 45% 96%;
+    --secondary-foreground: 0 75% 35%;
+
+    --muted: 0 10% 96%;
+    --muted-foreground: 0 5% 45%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 20% 90%;
+    --input: 0 20% 90%;
+    --ring: 0 75% 45%;
+
+    --radius: 0.75rem;
+
+    /* Degradês personalizados */
+    --gradient-primary: linear-gradient(135deg, hsl(0 75% 45%), hsl(0 65% 55%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 95% 58%), hsl(38 90% 65%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 75% 45%), hsl(0 65% 55%), hsl(43 95% 58%));
+    --gradient-elegant: linear-gradient(180deg, hsl(0 0% 100%), hsl(0 45% 98%));
+    
+    /* Sombras elegantes */
+    --shadow-red: 0 10px 40px -10px hsl(0 75% 45% / 0.3);
+    --shadow-gold: 0 10px 40px -10px hsl(43 95% 58% / 0.3);
+    --shadow-elegant: 0 20px 60px -15px hsl(0 50% 30% / 0.2);
+
+    --chart-1: 0 75% 45%;
+    --chart-2: 43 95% 58%;
+    --chart-3: 0 45% 70%;
+    --chart-4: 142 76% 36%;
+    --chart-5: 0 84% 60%;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 5% 15%;
+    --sidebar-primary: 0 75% 45%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 45% 96%;
+    --sidebar-accent-foreground: 0 75% 35%;
+    --sidebar-border: 0 20% 90%;
+    --sidebar-ring: 0 75% 45%;
+  }
+
+  .dark {
+    --background: 0 10% 10%;
+    --foreground: 0 5% 95%;
+
+    --card: 0 10% 13%;
+    --card-foreground: 0 5% 95%;
+
+    --popover: 0 10% 13%;
+    --popover-foreground: 0 5% 95%;
+
+    --primary: 0 75% 50%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 20% 18%;
+    --secondary-foreground: 0 5% 95%;
+
+    --muted: 0 10% 20%;
+    --muted-foreground: 0 5% 65%;
+
+    --accent: 43 95% 60%;
+    --accent-foreground: 0 10% 10%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 15% 25%;
+    --input: 0 15% 25%;
+    --ring: 0 75% 50%;
+
+    --gradient-primary: linear-gradient(135deg, hsl(0 75% 50%), hsl(0 65% 60%));
+    --gradient-gold: linear-gradient(135deg, hsl(43 95% 60%), hsl(38 90% 70%));
+    --gradient-hero: linear-gradient(135deg, hsl(0 75% 50%), hsl(0 65% 60%), hsl(43 95% 60%));
+    --gradient-elegant: linear-gradient(180deg, hsl(0 10% 10%), hsl(0 20% 15%));
+    
+    --shadow-red: 0 10px 40px -10px hsl(0 75% 50% / 0.4);
+    --shadow-gold: 0 10px 40px -10px hsl(43 95% 60% / 0.4);
+    --shadow-elegant: 0 20px 60px -15px hsl(0 50% 20% / 0.3);
+
+    --chart-1: 0 75% 50%;
+    --chart-2: 43 95% 60%;
+    --chart-3: 0 45% 60%;
+    --chart-4: 142 76% 36%;
+    --chart-5: 0 84% 60%;
+
+    --sidebar-background: 0 10% 13%;
+    --sidebar-foreground: 0 5% 95%;
+    --sidebar-primary: 0 75% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 20% 18%;
+    --sidebar-accent-foreground: 0 5% 95%;
+    --sidebar-border: 0 15% 25%;
+    --sidebar-ring: 0 75% 50%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
